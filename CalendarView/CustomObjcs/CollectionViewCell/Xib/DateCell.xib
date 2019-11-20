@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Uev-z3-Yjg" customClass="DateCell" customModule="CalendarView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="P1B-hb-7Oo">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgs-oM-GJL">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="113"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inf-bx-YaR">
+                                <rect key="frame" x="0.0" y="0.0" width="159" height="113"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="inf-bx-YaR" firstAttribute="top" secondItem="bgs-oM-GJL" secondAttribute="top" id="WV1-Ht-4pX"/>
+                            <constraint firstAttribute="trailing" secondItem="inf-bx-YaR" secondAttribute="trailing" id="cLh-In-YT9"/>
+                            <constraint firstItem="inf-bx-YaR" firstAttribute="leading" secondItem="bgs-oM-GJL" secondAttribute="leading" id="qYe-QB-eEP"/>
+                            <constraint firstAttribute="bottom" secondItem="inf-bx-YaR" secondAttribute="bottom" id="sD2-1v-nvq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bgs-oM-GJL" secondAttribute="bottom" id="n7e-RO-61J"/>
+                    <constraint firstAttribute="trailing" secondItem="bgs-oM-GJL" secondAttribute="trailing" id="t46-QV-7hL"/>
+                    <constraint firstItem="bgs-oM-GJL" firstAttribute="top" secondItem="P1B-hb-7Oo" secondAttribute="top" id="u3r-VE-5EP"/>
+                    <constraint firstItem="bgs-oM-GJL" firstAttribute="leading" secondItem="P1B-hb-7Oo" secondAttribute="leading" id="v3I-xd-IA0"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="159" height="113"/>
+            <connections>
+                <outlet property="dateLabel" destination="inf-bx-YaR" id="Nbz-EP-aaB"/>
+            </connections>
+            <point key="canvasLocation" x="52.898550724637687" y="99.441964285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>
